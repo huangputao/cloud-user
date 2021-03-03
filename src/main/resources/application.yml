@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    #1.JDBC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://159.75.109.153:3306/user_center?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: 123456
+
+  cloud:
+    nacos:
+      discovery:
+        #指定nacos服务器地址
+        server-addr: 159.75.109.153:8848
+
+
+  application:
+    name: springcloud-user
+
+server:
+  port: 8081
